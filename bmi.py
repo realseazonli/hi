@@ -4,6 +4,7 @@ height = float(input('请输入身高cm：'))
 height = height/100
 weight = float(input('请输入体重kg：'))
 bmi = weight/height/height
+bmi = round(bmi, 2)
 print('您的BMI值是：', bmi)
 if bmi < 18.5 :
     print('体重过轻')
